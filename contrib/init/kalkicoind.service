@@ -1,0 +1,26 @@
+[Unit]
+Description=Kalkicoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=kalkicoin
+Group=kalkicoin
+
+Type=forking
+PIDFile=/var/lib/kalkicoind/kalkicoind.pid
+
+ExecStart=/usr/bin/kalkicoind -daemon -pid=/var/lib/kalkicoind/kalkicoind.pid \
+          -conf=/etc/kalkicoin/kalkicoin.conf -datadir=/var/lib/kalkicoind
+
+ExecStop=-/usr/bin/kalkicoin-cli -conf=/etc/kalkicoin/kalkicoin.conf \
+         -datadir=/var/lib/kalkicoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

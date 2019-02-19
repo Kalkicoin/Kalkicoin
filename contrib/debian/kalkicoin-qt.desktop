@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Kalkicoin
+Comment=Kalkicoin P2P Cryptocurrency
+Comment[fr]=Kalkicoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Kalkicoin, eşten eşe kriptografik sanal para birimi
+Exec=kalkicoin-qt %u
+Terminal=false
+Type=Application
+Icon=kalkicoin128
+MimeType=x-scheme-handler/kalkicoin;
+Categories=Office;Finance;

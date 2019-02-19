@@ -1,0 +1,11 @@
+[Protocol]
+exec=kalkicoin-qt '%u'
+protocol=kalkicoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

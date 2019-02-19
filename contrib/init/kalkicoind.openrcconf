@@ -1,0 +1,26 @@
+# /etc/conf.d/kalkicoind: config file for /etc/init.d/kalkicoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/kalkicoin/kalkicoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/kalkicoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/kalkicoind.pid"
+
+# Where to write kalkicoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/kalkicoind"
+
+# User and group to own kalkicoind process
+#BITCOIND_USER="kalkicoin"
+#BITCOIND_GROUP="kalkicoin"
+
+# Path to kalkicoind executable
+#BITCOIND_BIN="/usr/bin/kalkicoind"
+
+# Nice value to run kalkicoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
